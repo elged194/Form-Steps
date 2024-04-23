@@ -53,6 +53,7 @@ body {
     position: absolute;
     background-color: #fff;
     transition: 0.3s ease;
+    width: 100%;
 }
 
 .container form .form.second {
@@ -76,7 +77,9 @@ form.secActive .form.first {
 }
 
 
-
+.container form .details{
+    margin-top: 30px;
+}
 .container form .title {
     display: block;
     margin-bottom: 8px;
@@ -94,7 +97,7 @@ form.secActive .form.first {
 }
 
 .container .fields .input-field {
-    width: calc(100% / 3 - 15px);
+    width: calc(100% / 2 - 15px);
     display: flex;
     flex-direction: column;
     margin: 4px 0;
@@ -106,7 +109,7 @@ form.secActive .form.first {
     color: #2e2e2e;
 }
 
-.input-field input {
+.input-field input , .input-field select{
     outline: none;
     border-radius: 5px;
     border: 1px solid #aaa;
@@ -129,6 +132,10 @@ form.secActive .form.first {
 .input-field input[type="date"]:valid {
     color: #333;
 }
+.input-field textarea{
+    font-size: 15px;
+    padding: 5px;
+}
 
 .container form button,
 .backBtn {
@@ -150,7 +157,7 @@ form.secActive .form.first {
 
 .container form button,
 .container form .backBtn {
-    font-style: 14px;
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -177,9 +184,25 @@ form .buttons button,
     margin-right: 14px;
 }
 
+form .first-img{
+    float: right;
+    width: 48%;
+}
+form .first-img img{
+    border-radius: 6px;
+    width: inherit;
+}
+
+form .first-Control{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
 @media (max-width: 750px) {
     .container form {
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
     }
 
     .container form::-webkit-scrollbar {
@@ -187,12 +210,10 @@ form .buttons button,
     }
 
     .container .fields .input-field {
-        width: calc(100% / 2 - 15px);
+        width: 100% ;
+    }
+    .container form::-webkit-scrollbar {
+        display: none;
     }
 }
 
-@media (max-width: 500px) {
-    .container .fields .input-field {
-        width: 100%;
-    }
-}

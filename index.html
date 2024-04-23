@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- bootstrap -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
-        integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,127 +21,119 @@
             <div class="form first">
                 <!-- details personal -->
                 <div class="details personal">
-                    <span class="title "> Personal Details </span>
-
+                    <span class="title "> First Details </span>
 
                     <div class="fields">
+
                         <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="text" placeholder="Enter Your Name" required>
+                            <label for="cars">Type of Model*:</label>
+                            <select name="cars" required>
+                                <option value="">...</option>
+                                <option value="Singles">Singles</option>
+                                <option value="Companies">Companies</option>
+                            </select>
                         </div>
 
                         <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="date" placeholder="Enter Your Name" required>
+                            <label for="maker">car maker*:</label>
+                            <select name="maker" required>
+                                <option value="">...</option>
+                                <option value="bmw">BMW</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="kia">KIA</option>
+                                <option value="toyota">TOYOTA</option>
+                                <option value="mg">MG</option>
+                                <option value="hyundai">HYUNDAI</option>
+                            </select>
                         </div>
 
                         <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="text" placeholder="Enter Your Name" required>
+                            <label for="cars">Car model*:</label>
+                            <select name="cars" required>
+                                <option value="">...</option>
+                                <option value="iX">iX</option>
+                                <option value="i7">i7</option>
+                                <option value="i4">i4</option>
+                                <option value="M3">M3</option>
+                                <option value="Coupé">Coupé</option>
+                                <option value="Convertible">Convertible</option>
+                            </select>
                         </div>
 
                         <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="text" placeholder="Enter Your Name" required>
+                            <label for="manufacture">Year of car manufacture*:</label>
+                            <select name="manufacture" required>
+                                <option value="">...</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                            </select>
                         </div>
 
-                        <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="date" placeholder="Enter Your Name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="text" placeholder="Enter Your Name" required>
-                        </div>
                     </div>
                 </div>
 
-                <!-- details Id -->
-                <div class="details ID">
-                    <span class="title "> Identity Details </span>
-                    <div class="fields">
-                        <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="text" placeholder="Enter Your Name" required>
-                        </div>
 
-                        <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="date" placeholder="Enter Your Name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="text" placeholder="Enter Your Name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="text" placeholder="Enter Your Name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="date" placeholder="Enter Your Name" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="text" placeholder="Enter Your Name" required>
-                        </div>
+                <div class="first-Control">
+                    <div class="first-img ">
+                        <img src="" alt="" class="outBot-img-first">
                     </div>
-                </div>
 
-                <button class="nextBtn">
-                    <span class="btnText">
-                        Next
-                    </span>
-                    <i class="fa-solid fa-circle-chevron-right"></i>
-                </button>
+                    <button class="nextBtn">
+                        <span class="btnText">
+                            Next
+                        </span>
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </button>
+                </div>
             </div>
 
             <div class="form second">
                 <!-- details personal -->
-                <div class="details address">
-                    <span class="title "> Address Details </span>
+                <div class="details repeater">
+                    <span class="title "> Second Details </span>
 
 
                     <div class="fields">
                         <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="text" placeholder="Enter Your Name" required>
+                            <label for="">Plot Name</label>
+                            <input type="text" placeholder="Plot Name" required>
                         </div>
 
                         <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="date" placeholder="Enter Your Name" required>
+                            <label for="">Number of Pieces*</label>
+                            <input type="number" placeholder="Number of Pieces" required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label for="">Serial number of the piece*</label>
+                            <input type="text" placeholder="Serial number of the piece" required>
                         </div>
 
                         <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="text" placeholder="Enter Your Name" required>
+                            <label for="">Car body number*</label>
+                            <input type="text" placeholder="Car body number" required>
                         </div>
 
-                        <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="text" placeholder="Enter Your Name" required>
-                        </div>
 
                         <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="date" placeholder="Enter Your Name" required>
+                            <label for="">Plot Description</label>
+                            <textarea name="" id="" cols="30" rows="3" dir="auto"></textarea>
                         </div>
 
-                        <div class="input-field">
-                            <label for="">Full Name</label>
-                            <input type="text" placeholder="Enter Your Name" required>
+                        <div class="">
+                            <label for="">Photos of each piece</label>
+                            <input type="file"  >
                         </div>
                     </div>
                 </div>
 
                 <!-- details Id -->
-                <div class="details ID">
+                <!-- <div class="details ID">
                     <span class="title "> Identity Details </span>
                     <div class="fields">
                         <div class="input-field">
@@ -177,8 +166,69 @@
                             <input type="text" placeholder="Enter Your Name" required>
                         </div>
                     </div>
+                </div> -->
+
+                <div class="buttons">
+                    <button class="backBtn">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                        <span class="btnText">
+                            Back
+                        </span>
+                    </button>
+
+                    <button class="nextBtn">
+                        <span class="btnText">
+                            Next
+                        </span>
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </button>
                 </div>
 
+            </div>
+
+            <!-- form third -->
+            <div class="form third">
+                <!-- details personal -->
+                <div class="details repeater">
+                    <span class="title "> Second Details </span>
+
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="">Plot Name</label>
+                            <input type="text" placeholder="Plot Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="">Number of Pieces*</label>
+                            <input type="number" placeholder="Number of Pieces" required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label for="">Serial number of the piece*</label>
+                            <input type="text" placeholder="Serial number of the piece" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="">Car body number*</label>
+                            <input type="text" placeholder="Car body number" required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label for="">Plot Description</label>
+                            <textarea name="" id="" cols="30" rows="3" dir="auto"></textarea>
+                        </div>
+
+                        <div class="">
+                            <label for="">Photos of each piece</label>
+                            <input type="file"  >
+                        </div>
+                    </div>
+                </div>
+
+                
                 <div class="buttons">
                     <button class="backBtn">
                         <i class="fa-solid fa-circle-chevron-right"></i>
